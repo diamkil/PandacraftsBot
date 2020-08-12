@@ -22,6 +22,9 @@ client.on('message', message => {
 	else if (message.content === `${config.prefix}server-name`) {
 	message.channel.send(`This server's name is: ${message.guild.name}\nTotal members: ${message.guild.memberCount}`);
 	}
+	else if (message.content === `${config.prefix}user-info`) {
+	message.channel.send(`Your username: ${message.author.username}\nYour ID: ${message.author.id}`);
+	}
 });
 
 // log in using the token in token.json
