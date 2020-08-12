@@ -11,20 +11,20 @@ client.once('ready', () => {
 	console.log('Ready!');
 });
 
-// logs every message the bot received
+// Command handler
 client.on('message', message => {
-	console.log(message.content);
-  // reply to !ping by "pong"
-  if (message.content.startsWith(`${config.prefix}ping`)) {
-  	// send back "Pong." to the channel the message was sent in
-  	message.channel.send('Pong.');
-  }
-	else if (message.content === `${config.prefix}server-name`) {
-	message.channel.send(`This server's name is: ${message.guild.name}\nTotal members: ${message.guild.memberCount}`);
+	if (!message.content.startsWith(config.prefix) || message.author.bot) return;
+
+	const args = message.content.slice(config.prefix.length).trim().split(/ +/);
+	const command = args.shift().toLowerCase();
+
+	if (command === 'ping') {
+		message.channel.send('Pong.');
 	}
-	else if (message.content === `${config.prefix}user-info`) {
-	message.channel.send(`Your username: ${message.author.username}\nYour ID: ${message.author.id}`);
+	else if (command === 'beep') {
+		message.channel.send('Boop.');
 	}
+	// other commands...
 });
 
 // log in using the token in token.json
