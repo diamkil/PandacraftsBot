@@ -7,9 +7,13 @@
     "@discordjs/opus": "^0.3.2",
     "discord.js": "^12.2.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.1.1",
+    "mockery": "^2.1.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha tests/**/*.js"
   },
   "repository": {
     "type": "git",
