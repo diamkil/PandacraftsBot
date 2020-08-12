@@ -1,0 +1,12 @@
+module.exports = {
+	name: 'args-info',
+	description: 'Information about the arguments provided.',
+	args: true,
+	usage: '<user> <role>',
+	guildOnly: false,
+	cooldown: 5,
+	// aliases: ['icon', 'pfp'],
+	execute(message, args) {
+		// ....
+	},
+};
