@@ -1,0 +1,23 @@
+{
+  "name": "pandacraftsbot",
+  "version": "1.0.0",
+  "description": "The Whole Bot",
+  "main": "index.js",
+  "dependencies": {
+    "discord.js": "^12.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diamkil/PandacraftsBot.git"
+  },
+  "author": "diamkil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diamkil/PandacraftsBot/issues"
+  },
+  "homepage": "https://github.com/diamkil/PandacraftsBot#readme"
+}
