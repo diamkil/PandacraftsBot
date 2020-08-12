@@ -1,7 +1,9 @@
 // require the discord.js module
 const Discord = require('discord.js');
+// require the config file
+const config = require('./config.json');
 // require the token file
-const token = require('./token.json');
+const { token } = require('./token.json');
 // create the discord client
 const client = new Discord.Client();
 
@@ -20,4 +22,4 @@ client.on('message', message => {
 });
 
 // log in using the token in token.json
-client.login(token.token);
+client.login(token);
