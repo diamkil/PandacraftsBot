@@ -13,8 +13,7 @@
     "mockery": "^2.1.0"
   },
   "scripts": {
-    "start": "node index.js"
-    "test": "mocha *.js"
+    "test": "mocha tests/**/*.js"
   },
   "repository": {
     "type": "git",
