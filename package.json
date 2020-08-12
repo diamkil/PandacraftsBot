@@ -4,8 +4,8 @@
   "description": "The Whole Bot",
   "main": "index.js",
   "dependencies": {
-    "@discordjs/opus": "^0.3.2",
-    "discord.js": "^12.1.0"
+    "@discordjs/opus": "0.3.2",
+    "discord.js": "12.1.0"
   },
   "devDependencies": {},
   "scripts": {
