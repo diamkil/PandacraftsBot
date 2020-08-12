@@ -14,5 +14,11 @@ client.on('message', message => {
 	console.log(message.content);
 });
 
+// reply to !ping by "pong"
+if (message.content === '!ping') {
+	// send back "Pong." to the channel the message was sent in
+	message.channel.send('Pong.');
+}
+
 // log in using the token in token.json
 client.login(token.token);
