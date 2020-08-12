@@ -14,7 +14,7 @@
   },
   "scripts": {
     "start": "node index.js"
-    "basetest": "mocha *.js"
+    "test": "mocha *.js"
   },
   "repository": {
     "type": "git",
