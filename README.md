@@ -1,0 +1,2 @@
+# PandacraftsBot
+Our discord bot
