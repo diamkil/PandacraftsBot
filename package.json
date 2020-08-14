@@ -13,10 +13,28 @@
     "utf-8-validate": "5.0.2",
     "zlib-sync": "0.1.7"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "jest": "^26.4.0",
+    "jest-junit": "^11.1.0"
+  },
   "scripts": {
-    "test": "",
+    "test": "jest",
     "start": "node index.js"
+  },
+  "jest": {
+    "verbose": true,
+    "reporters": [
+      "default",
+      "jest-junit"
+    ]
+  },
+  "jest-junit": {
+    "suiteName": "jest tests",
+    "output": "./junit.xml",
+    "classNameTemplate": "{classname}-{title}",
+    "titleTemplate": "{classname}-{title}",
+    "ancestorSeparator": " › ",
+    "usePathForSuiteName": "true"
   },
   "repository": {
     "type": "git",
