@@ -10,7 +10,7 @@
     "erlpack": "github:discordapp/erlpack",
     "eslint": "7.7.0",
     "node-gyp-build": "4.2.3",
-    "utf-8-validate": "5.0.2",
+    "utf-8-validate": "5.0.3",
     "zlib-sync": "0.1.7"
   },
   "devDependencies": {},
